@@ -28,6 +28,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let filter = CIFilter(name: "CIPhotoEffectProcess")
         display(filter: filter!)
     }
+    
+    @IBAction func invert() {
+        let filter = CIFilter(name: "CIColorInvert")
+        display(filter: filter!)
+    }
 
     func display(filter: CIFilter) {
         guard let original = original else {
