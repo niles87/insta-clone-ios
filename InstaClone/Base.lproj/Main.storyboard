@@ -34,7 +34,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="sepia" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dam-My-fLa"/>
+                                    <action selector="sepia" destination="BYZ-38-t0r" eventType="touchUpInside" id="pwC-6Q-58r"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tX5-Ku-d4F">
@@ -97,6 +97,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="InstaClone" id="9vq-q2-BOp">
+                        <barButtonItem key="leftBarButtonItem" title="Save To Photos" id="jBR-od-feD">
+                            <connections>
+                                <action selector="saveToPhotos:" destination="BYZ-38-t0r" id="509-Tc-gcs"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Choose Photo" id="Xdw-rq-QkK">
                             <connections>
                                 <action selector="choosePhoto" destination="BYZ-38-t0r" id="U8U-F4-22g"/>
